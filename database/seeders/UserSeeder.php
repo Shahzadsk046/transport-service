@@ -21,27 +21,27 @@ class UserSeeder extends Seeder
 
         // create demo users
         $user1 = \App\Models\User::factory()->create([
-            'name' => 'Admin User',
-            // 'f_name' => 'Admin',
-            // 'l_name' => 'User',
+            // 'name' => 'Admin User',
+            'first_name' => 'Admin',
+            'last_name' => 'User',
             'email' => 'admin@example.com',
             'password' => Hash::make('admin123'),
             'is_admin' => 1,
         ]);
 
         $user2 = \App\Models\User::factory()->create([
-            'name' => 'Dispatcher User',
-            // 'f_name' => 'Dispatcher',
-            // 'l_name' => 'User',
+            // 'name' => 'Dispatcher User',
+            'first_name' => 'Dispatcher',
+            'last_name' => 'User',
             'email' => 'dispatcher@example.com',
             'password' => Hash::make('test3333'),
             'is_admin' => 0,
         ]);
 
         $user3 = \App\Models\User::factory()->create([
-            'name' => 'Driver User',
-            // 'f_name' => 'Driver',
-            // 'l_name' => 'User',
+            // 'name' => 'Driver User',
+            'first_name' => 'Driver',
+            'last_name' => 'User',
             'email' => 'driver@example.com',
             'password' => Hash::make('test3333'),
             'is_admin' => 0,
